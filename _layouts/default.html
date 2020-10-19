@@ -20,10 +20,6 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
-    <nav>
-      <a href="/ddrs/">Home</a>
-      <a href="/ddrs/Test2.html">test2</a>
-    </nav>
 
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
@@ -40,6 +36,7 @@
     </header>
 
     <main id="content" class="main-content" role="main">
+      {% include navigation.html %}
       {{ content }}
 
       <footer class="site-footer">
